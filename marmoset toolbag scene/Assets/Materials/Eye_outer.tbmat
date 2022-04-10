@@ -1,0 +1,58 @@
+@Sub SRSurface = SRSurfaceNormalMap
+    Normal Map = nil
+    Scale & Bias = 1
+    Flip X = 0
+    Flip Y = 0
+    Flip Z = 0
+    Object Space = 0
+@End
+
+@Sub SRMicrosurface = SRMicrosurfaceGlossMap
+    Gloss Map = nil
+    Channel = 0
+    Gloss = 1
+    Horizon Smoothing = 0.5
+    Invert = 0
+@End
+
+@Sub SRAlbedo = SRAlbedoMap
+    Albedo Map = nil
+    Color = 1 1 1
+@End
+
+@Sub SRDiffusion = SRDiffusionLambertian
+@End
+
+@Sub SRReflectivity = SRReflectivitySpecularMap
+    Specular Map = nil
+    Channel;specular = 4
+    Intensity = 0.0129132
+    Color = 1 1 1
+    Fresnel = 1
+    Fresnel Color = 1 1 1
+    Conserve Energy = 1
+@End
+
+@Sub SRReflection = SRReflectionGGX
+    Horizon Occlusion = 1
+@End
+
+@Sub SRTransparency = SRTransparencyRefraction
+    Index of Refraction = 1
+    Distant Background = 0
+    Use Microsurface = 1
+    Tint = 1 1 1
+    Albedo Tint = 1
+    Caustics = 1
+    Mask = nil
+    Channel;mask = 0
+@End
+
+@Sub SRMerge = SRMerge
+    Texture Tiling = 1
+    Tile U = 1
+    Offset U = 0
+    Tile V = 1
+    Offset V = 0
+@End
+

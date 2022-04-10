@@ -1,0 +1,44 @@
+@Sub SRSurface = SRSurfaceNormalMap
+    Normal Map = @Tex file "../Textures/Hair low split_hair_Normal.png" fileFull "F:/3d works/kyle/render/marmoset toolbag scene/Assets/Textures/Hair low split_hair_Normal.png" srgb 0 filter 1 mip 1 aniso 4 wrap 1 @EndTex
+    Scale & Bias = 1
+    Flip X = 0
+    Flip Y = 1
+    Flip Z = 0
+    Object Space = 0
+@End
+
+@Sub SRMicrosurface = SRMicrosurfaceGlossMap
+    Gloss Map = @Tex file "../Textures/Hair low split_hair_Roughness.png" fileFull "F:/3d works/kyle/render/marmoset toolbag scene/Assets/Textures/Hair low split_hair_Roughness.png" srgb 0 filter 1 mip 1 aniso 4 wrap 1 @EndTex
+    Channel = 0
+    Gloss = 1
+    Horizon Smoothing = 0.5
+    Invert = 1
+@End
+
+@Sub SRAlbedo = SRAlbedoMap
+    Albedo Map = @Tex file "../Textures/Hair low split_hair_BaseColor.png" fileFull "F:/3d works/kyle/render/marmoset toolbag scene/Assets/Textures/Hair low split_hair_BaseColor.png" srgb 1 filter 1 mip 1 aniso 4 wrap 1 @EndTex
+    Color = 0.80766 0.80766 0.80766
+@End
+
+@Sub SRDiffusion = SRDiffusionLambertian
+@End
+
+@Sub SRReflectivity = SRReflectivityMetalnessMap
+    Metalness Map = @Tex file "../Textures/Hair low split_hair_Metallic.png" fileFull "F:/3d works/kyle/render/marmoset toolbag scene/Assets/Textures/Hair low split_hair_Metallic.png" srgb 1 filter 1 mip 1 aniso 4 wrap 1 @EndTex
+    Channel = 0
+    Metalness = 1
+    Invert = 0
+@End
+
+@Sub SRReflection = SRReflectionGGX
+    Horizon Occlusion = 1
+@End
+
+@Sub SRMerge = SRMerge
+    Texture Tiling = 1
+    Tile U = 1
+    Offset U = 0
+    Tile V = 1
+    Offset V = 0
+@End
+
